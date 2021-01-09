@@ -35,18 +35,43 @@
         const ramdom = Math.floor(Math.random() *6)+1;
 
         btn.addEventListener('click', function (e) {
-            const num = (document.getElementById('num')).value;
+            let num = (document.getElementById('num')).value;
 
             if(! num){
                 alert('input something please');
                 return;
             }
 
+            if(num > 6){
+                alert('input 1-6');
+                return;
+            }
+            
+
+            // console.log("ramdom:"+ ramdom);
+            
+            num = parseInt(num);
+            
 
 
+            if(num === ramdom){
+                alert('Good job, you are right!!!');
+                return;
+            }
 
-            console.log(ramdom);
-            console.log(num);
+
+            if(num > ramdom){
+                alert('Smaller, please');
+                return;
+            }
+
+            if(num < 6){
+                alert('Bigger, please');
+                return;
+            }
+
+            // console.log(ramdom);
+            // console.log(num);
     });
     </script>
 
