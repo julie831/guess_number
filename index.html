@@ -79,12 +79,25 @@
 
 
             if(num > ramdom){
-                alert('Smaller, please');
+                // alert('Smaller, please');
+                Swal.fire({
+                title: 'warning!',
+                text: 'Smaller, please',
+                icon: 'warning',
+                // confirmButtonText: 'Cool'
+                })
                 return;
             }
 
+            
             if(num < 6){
-                alert('Bigger, please');
+                // alert('Bigger, please');
+                Swal.fire({
+                title: 'warning!',
+                text: 'Bigger, please',
+                icon: 'warning',
+                // confirmButtonText: 'Cool'
+                })
                 return;
             }
 
