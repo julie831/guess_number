@@ -65,8 +65,15 @@
             
 
 
+            console.log(ramdom);
             if(num === ramdom){
-                alert('Good job, you are right!!!');
+                // alert('Good job, you are right!!!');
+                Swal.fire({
+                title: 'YEAH!',
+                text: 'Good job, you are right!!!',
+                icon: 'success',
+                // confirmButtonText: 'Cool'
+                })
                 return;
             }
 
