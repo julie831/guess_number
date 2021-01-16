@@ -54,7 +54,13 @@
             }
 
             if(num > 6){
-                alert('input 1-6');
+                // alert('input 1-6');
+                Swal.fire({
+                title: 'Error!',
+                text: 'input 1-6',
+                icon: 'error',
+                // confirmButtonText: 'Cool'
+                })
                 return;
             }
             
