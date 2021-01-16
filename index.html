@@ -43,7 +43,13 @@
             let num = (document.getElementById('num')).value;
 
             if(! num){
-                alert('input something please');
+               
+                Swal.fire({
+                title: 'Error!',
+                text: 'input something please',
+                icon: 'error',
+                // confirmButtonText: 'Cool'
+                })
                 return;
             }
 
